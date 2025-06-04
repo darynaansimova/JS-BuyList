@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head lang="uk">
+<head lang="eng">
     <meta charset="UTF-8">
-    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple buy list application to manage products to buy and their quantities.">
+    <meta name="author-name" content="Daryna Ansimova">
+    <meta name="keywords" content="buy list, shopping list, product management, web application">
+    <title>Buy List</title>
 
 
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+    <section>
+        <div class="column-section">
+            <form class="add-product">
+                <input type="text" id="add" placeholder="Product name" required>
+                <button type="submit" id="add-button" data-tooltip="Add a new product"><b>Add</b></button>
+            </form>
+            <div class="product-container">
+                <label class="product-name" for="cookies"><del>Cookies</del></label>
+                <span class="product-amount">1</span>
+                <button class="buy-button not-bought" data-tooltip="The product was not bought">Not bought</button>
+            </div>
+            <div class="product-container">
+                <label class="product-name" for="apples">Apples</label>
+                <button class="sign minus" data-tooltip="Decrement product">-</button>
+                <span class="product-amount">4</span>
+                <button class="sign plus" data-tooltip="Increment product">+</button>
+                <button class="buy-button bought" data-tooltip="The product was already bought">Bought</button>
+                <button class="sign remove" data-tooltip="Remove from list">⨯</button>
+            </div>
+            <div class="product-container">
+                <label class="product-name" for="apples">Cheese</label>
+                <button class="sign minus" data-tooltip="Decrement product" disabled>-</button>
+                <span class="product-amount">1</span>
+                <button class="sign plus" data-tooltip="Increment product">+</button>
+                <button class="buy-button bought" data-tooltip="The product was already bought">Bought</button>
+                <button class="sign remove" data-tooltip="Remove from list">⨯</button>
+            </div>
+        </div>
+        <div class="column-section">
+            <header>
+                <h2>To buy</h2>
+            </header>
+            <div class="to-buy">
+                <span class="product-item">
+                    Apples
+                    <span class="amount">4</span>
+                </span>
+                <span class="product-item">
+                    Cheese
+                    <span class="amount">1</span>
+                </span>
+            </div>
+            <header>
+                <h2>Bought</h2>
+            </header>
+            <div class="to-buy">
+                <span class="product-item">
+                    <del>Cookies</del>
+                    <span class="amount">1</span>
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- Badge -->
+    <div class="badge">
+        <div id="buy-list"><b>Buy List</b></div>
+        <div id="author-name">
+            <div>Created by:</div>
+            <div id="name">Daryna Ansimova</div>
+        </div>
+    </div>
 </body>
 </html>
