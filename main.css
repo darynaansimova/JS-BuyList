@@ -8,23 +8,23 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    margin: 5px;
+    margin: 0.3rem;
 }
 
 h2 {
     margin: 0;
-    padding: 15px;
-    border-bottom: 1px solid lightgray;
+    padding: 1rem;
+    border-bottom: 0.06rem solid lightgray;
 }
 
 .column-section {
     background-color: white;
-    border-radius: 5px;
-    margin: 10px;
+    border-radius: 0.3rem;
+    margin: 0.6rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
 }
 
 .to-buy {
@@ -33,31 +33,31 @@ h2 {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
-    padding: 15px;
-    border-bottom: 1px solid lightgray;
+    gap: 0.3rem;
+    padding: 1rem;
+    border-bottom: 0.06rem solid lightgray;
 }
 
 .product-item {
     background-color: rgb(230, 230, 230);
-    height: 25px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: small;
+    height: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: rgb(100, 100, 100);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5px;
+    gap: 0.3rem;
 }
 
 .amount {
     background-color: orange;
     color: white;
-    border-radius: 10px;
-    height: 20px;
-    width: 20px;
+    border-radius: 0.75rem;
+    height: 1.5rem;
+    width: 1.5rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -68,28 +68,28 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
-    border-bottom: 1px solid lightgray;
+    padding: 1.2rem;
+    border-bottom: 0.06rem solid lightgray;
 }
 
 #add {
     flex-grow: 1;
-    padding: 10px 20px;
-    font-size: medium;
-    border: 1px solid darkgray;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: 0.06rem solid darkgray;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
 }
 
 #add-button {
-    padding: 10px 30px;
-    font-size: medium;
+    padding: 0.6rem 1.875rem;
+    font-size: 1rem;
     color: white;
     background-color: rgb(55, 132, 215);
     border: none;
-    border-bottom: 5px solid rgb(31, 72, 197);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom: 0.3rem solid rgb(31, 72, 197);
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
     cursor: pointer;
 }
 
@@ -109,7 +109,7 @@ button::after {
     color: #fff;
     border-radius: 8px;
     padding: 6px 12px;
-    font-size: small;
+    font-size: 0.8rem;
     font-weight: normal;
     white-space: nowrap;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -123,14 +123,14 @@ button:hover::after {
 }
 
 .buy-button {
-    height: 40px;
-    padding: 10px 20px;
+    height: 2.5rem;
+    padding: 0.7rem 1.2rem;
     font-weight: bold;
     color: rgb(100, 100, 100);
     background: linear-gradient(to bottom, rgb(245,245,245), rgb(235,235,235));
     border: 1px solid lightgray;
-    border-bottom: 3px solid rgb(180, 180, 180);
-    border-radius: 5px;
+    border-bottom: 0.2rem solid rgb(180, 180, 180);
+    border-radius: 0.3rem;
     cursor: pointer;
     width: fit-content;
     justify-self: right;
@@ -138,22 +138,22 @@ button:hover::after {
 
 .product-name {
     grid-area: product-name;
-    font-size: medium;
+    font-size: 1rem;
     justify-self: left;
 }
 
 .product-container {
     display: grid;
-    grid-template-columns: 1fr 40px 30px 40px 1fr 40px;
-    column-gap: 10px;
+    grid-template-columns: 1fr 2.5rem 1.8rem 2.5rem 1fr 2.5rem;
+    column-gap: 0.7rem;
     justify-items: center;
     align-items: center;
     grid-template-areas:
         "product-name . product-amount . not-bought not-bought"
         "product-name minus product-amount plus bought remove"
         "product-name minus product-amount plus bought remove";
-    padding: 7px 20px;
-    border-bottom: 1px solid lightgray;
+    padding: 0.4rem 1.2rem;
+    border-bottom: 0.06rem solid lightgray;
 }
 
 .bought {
@@ -167,49 +167,49 @@ button:hover::after {
 .sign {
     box-sizing: border-box;
     border: none;
-    width: 40px;
-    height: 40px;
-    font-size: large;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     cursor: pointer;
 }
 
 .minus {
     background-color: rgb(247, 63, 63);
-    border-bottom: 3px solid rgb(186, 37, 37);
+    border-bottom: 0.2rem solid rgb(186, 37, 37);
     grid-area: minus;
 }
 
 .minus:disabled {
     background-color: rgb(252, 172, 172);
-    border: rgb(249, 87, 87);
+    border-bottom: 0.2rem solid rgb(253, 136, 136);
     cursor: not-allowed;
 }
 
 .plus {
     background-color: rgb(109, 214, 60);
-    border-bottom: 3px solid rgb(54, 129, 24);
+    border-bottom: 0.2rem solid rgb(54, 129, 24);
     grid-area: plus;
 }
 
 .remove {
     background-color: rgb(247, 63, 63);
-    border-bottom: 3px solid rgb(186, 37, 37);
-    border-radius: 5px;
+    border-bottom: 0.2rem solid rgb(186, 37, 37);
+    border-radius: 0.3rem;
     grid-area: remove;
 }
 
 .product-amount {
     grid-area: product-amount;
-    width: 30px;
-    height: 30px;
+    width: 1.8rem;
+    height: 1.8rem;
     background-color: rgb(235, 235, 235);
     font-weight: bold;
     color: rgb(100, 100, 100);
-    border-radius: 5px;
-    padding: 2px;
+    border-radius: 0.3rem;
+    padding: 0.15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,12 +219,12 @@ button:hover::after {
     background-color: darkorchid;
     color: white;
     font-family: Helvetica, sans-serif;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
     position: fixed;
-    bottom: -60px;
-    height: 110px;
-    width: 80px;
+    bottom: -3.75rem;
+    height: 6.875rem;
+    width: 5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -236,35 +236,45 @@ button:hover::after {
 
 .badge:hover {
     background-color: blue;
-    transform: translateY(-60px);
+    transform: translateY(-3.75rem);
     cursor: default;
 }
 
 #author-name {
-    font-size: x-small;
+    font-size: 0.7rem;
     flex-direction: column;
     text-align: left;
     padding-left: 10%;
 }
 
 #name {
-    font-size: small;
+    font-size: 0.8rem;
 }
 
 @media print {
+    html{
+        font-size: 2vmin;
+        print-color-adjust: exact;
+    }
+    .buy-button {
+        font-size: 100%;
+    }
+    button::after {
+        display: none;
+    }
     #buy-list {
         display: none;
     }
 
-    .badge {
+    .badge, .badge:hover {
         background-color: white;
         color: black;
         border: 1px solid darkorchid;
-        height: 50px;
+        height: 3.125rem;
         width: auto;
         bottom: 0;
         justify-content: space-around;
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     #author-name {
